@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="圆珠笔加工视频 - 专业圆珠笔生产制作工艺展示、注塑成型流程、笔芯组装技术及模具解析。提供高清工业生产视频教程与原材料选择指南。">
+    <meta name="keywords" content="圆珠笔加工视频, 圆珠笔制作, 笔杆注塑, 笔芯组装, 工业制造视频">
+    <title>圆珠笔加工视频 - 工业制作工艺与生产流程展示</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e67e22;
+            --bg-light: #f8f9fa;
+            --text-dark: #333;
+            --text-gray: #666;
+            --border-color: #e1e4e8;
+            --container-width: 1200px;
+            --spacing-unit: 1rem;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section {
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-gray);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-gray);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: var(--accent-color);
+            color: #fff;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #d35400;
+        }
+
+        /* Video Grid */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .video-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid var(--border-color);
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            background-color: #000;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .video-info {
+            padding: 1.5rem;
+        }
+
+        .video-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .video-meta {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .tag {
+            background-color: #eee;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        /* Process Section */
+        .process-steps {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .step-item {
+            flex: 1 1 300px;
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .step-number {
+            font-size: 3rem;
+            font-weight: 900;
+            color: rgba(230, 126, 34, 0.2);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .step-item h3 {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .step-item p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+
+        /* FAQ Section */
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .faq-item {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 1.5rem;
+        }
+
+        .faq-item h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .faq-item p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer-content p {
+            opacity: 0.8;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                height: auto;
+                padding: 1rem 0;
+                gap: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container nav-container">
+        <div class="logo">笔工<span>坊</span></div>
+        <nav>
+            <ul>
+                <li><a href="#videos">加工视频</a></li>
+                <li><a href="#process">工艺流程</a></li>
+                <li><a href="#materials">原材料</a></li>
+                <li><a href="#faq">常见问题</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>圆珠笔加工视频</h1>
+            <p>深入了解圆珠笔从原材料到成品的全套生产制作工艺，包括注塑成型、笔芯组装与质量检测。</p>
+            <a href="#videos" class="btn">观看生产视频</a>
+        </div>
+    </section>
+
+    <!-- Video Showcase Section -->
+    <section id="videos" class="section">
+        <div class="container">
+            <h2 class="section-title">圆珠笔生产制作视频</h2>
+            <p class="section-subtitle">高清工业级生产流程解析，展示现代自动化圆珠笔制造技术。</p>
+            
+            <div class="video-grid">
+                <!-- Video 1: Injection Molding -->
+                <article class="video-card">
+                    <div class="video-wrapper">
+                        <!-- Using a placeholder video that simulates injection molding visual -->
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0&mute=1&loop=1&playlist=dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>注塑成型工艺演示</h3>
+                        <div class="video-meta">
+                            <span>原料：ABS塑料</span>
+                            <span class="tag">核心工艺</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Video 2: Assembly -->
+                <article class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0&mute=1&loop=1&playlist=dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>笔杆与笔头组装</h3>
+                        <div class="video-meta">
+                            <span>速度：800支/分钟</span>
+                            <span class="tag">组装环节</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Video 3: Ink Filling -->
+                <article class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0&mute=1&loop=1&playlist=dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>圆珠笔芯灌墨过程</h3>
+                        <div class="video-meta">
+                            <span>设备：自动灌装机</span>
+                            <span class="tag">灌装技术</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Video 4: Quality Control -->
+                <article class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0&mute=1&loop=1&playlist=dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>成品质量检测线</h3>
+                        <div class="video-meta">
+                            <span>检测：漏墨测试</span>
+                            <span class="tag">质检标准</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="section" style="background-color: var(--bg-light);">
+        <div class="container">
+            <h2 class="section-title">圆珠笔加工全流程</h2>
+            <p class="section-subtitle">从注塑到成品，掌握圆珠笔制造的关键步骤。</p>
+
+            <div class="process-steps">
+                <div class="step-item">
+                    <div class="step-number">01</div>
+                    <h3>原料准备与造粒</h3>
+                    <p>将ABS或PP塑料颗粒通过挤出机加热熔化，制成均匀的塑料熔体。此步骤决定了笔杆的物理性能和表面光泽度。</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">02</div>
+                    <h3>模具设计与制造</h3>
+                    <p>根据笔型设计高精度钢模，确保笔杆的螺纹、笔夹和笔帽的尺寸精度，通常公差控制在0.01mm以内。</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">03</div>
+                    <h3>注塑成型</h3>
+                    <p>将熔融塑料注入模具型腔，经过保压冷却后脱模，得到笔杆毛坯。这是圆珠笔加工中最关键的环节。</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">04</div>
+                    <h3>笔芯组装</h3>
+                    <p>将不锈钢笔头、碳素墨水球珠、弹簧和笔舌组合，装入笔杆尾部。要求密封性良好，防止漏墨。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials Section -->
+    <section id="materials" class="section">
+        <div class="container">
+            <h2 class="section-title">常用加工材料</h2>
+            <div class="faq-grid">
+                <article class="faq-item">
+                    <h4>ABS 塑料</h4>
+                    <p>最常用的圆珠笔笔杆材料。具有优良的耐冲击性、耐化学腐蚀性和易加工性，表面可进行电镀或喷涂处理。</p>
+                </article>
+                <article class="faq-item">
+                    <h4>PP 聚丙烯</h4>
+                    <p>一种半结晶的热塑性塑料。具有重量轻、耐热性好（可承受高温灌装）的特点，常用于高档书写工具。</p>
+                </article>
+                <article class="faq-item">
+                    <h4>金属合金</h4>
+                    <p>用于高档笔杆，如铝合金、锌合金。通过CNC数控机床加工，质感厚重，适合商务场合使用。</p>
+                </article>
+                <article class="faq-item">
+                    <h4>树脂与亚克力</h4>
+                    <p>通过注塑成型，色彩鲜艳，透明度高。常用于创意笔或礼品笔的生产。</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section" style="background-color: var(--bg-light);">
+        <div class="container">
+            <h2 class="section-title">加工常见问题</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>圆珠笔加工需要什么设备？</h4>
+                    <p>主要需要注塑机、模具、笔芯组装机（或全自动圆珠笔生产线）以及质检设备。如果是小批量定制，可能还需要CNC加工中心。</p>
+                </div>
+                <div class="faq-item">
+                    <h4>如何提高笔杆的光泽度？</h4>
+                    <p>可以通过更换高光泽度模具、增加表面抛光工序以及使用高纯度ABS原料来提高表面光泽。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="logo" style="justify-content: center; color: #fff;">笔工<span>坊</span></div>
+        <p>专注圆珠笔加工工艺解析与视频分享</p>
+        <p style="margin-top: 1rem; font-size: 0.8rem; color: #999;">&copy; 2023 笔工坊圆珠笔加工视频中心</p>
+    </div>
+</footer>
+
+</body>
+</html>
