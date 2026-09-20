@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="身子轻如燕 - 专业解读身体轻盈感的训练方法、健康饮食建议及中医调理方案。探索如何通过科学运动提升身体协调性、增强核心力量，实现真正的身轻如燕。">
+    <meta name="keywords" content="身子轻如燕,身体轻盈,核心力量,普拉提,瑜伽,身体协调性,健康生活">
+    <title>身子轻如燕 - 身体轻盈感训练与健康管理指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #27ae60;
+            --accent-hover: #219150;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --border-radius: 12px;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            --container-width: 1200px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--accent-color);
+        }
+
+        .cta-btn {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #e0f2f1 0%, #e8f5e9 100%);
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -20%;
+            width: 600px;
+            height: 600px;
+            background: rgba(39, 174, 96, 0.1);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 50px;
+        }
+
+        .stat-item h3 {
+            font-size: 2rem;
+            color: var(--accent-color);
+        }
+
+        .stat-item p {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        /* Features Grid */
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .features {
+            padding: 80px 0;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            padding: 40px 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background-color: #e8f5e9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: var(--accent-color);
+        }
+
+        .feature-icon svg {
+            width: 35px;
+            height: 35px;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .feature-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Method Section */
+        .method {
+            background-color: white;
+            padding: 80px 0;
+        }
+
+        .method-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .method-image img {
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .method-content h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .method-list {
+            margin-top: 30px;
+        }
+
+        .method-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .method-num {
+            background-color: var(--accent-color);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .method-text h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: var(--primary-color);
+        }
+
+        .method-text p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Diet Section */
+        .diet {
+            padding: 80px 0;
+            background-color: #fafafa;
+        }
+
+        .diet-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .diet-card {
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .diet-img {
+            height: 200px;
+            width: 100%;
+        }
+
+        .diet-info {
+            padding: 25px;
+        }
+
+        .diet-info h3 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .diet-info p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            background-color: #e0f2f1;
+            color: var(--accent-color);
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 80px 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: var(--text-secondary);
+            display: none;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 15px;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question svg {
+            transform: rotate(180deg);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #bdc3c7;
+            font-size: 0.9rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #95a5a6;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .nav-wrapper {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+
+            nav ul {
+                margin: 15px 0;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .method-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .method-image {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">身子<span>轻如燕</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#features" class="active">核心训练</a></li>
+                    <li><a href="#method">科学方法</a></li>
+                    <li><a href="#diet">饮食调理</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+            <a href="#method" class="cta-btn">开始训练</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>告别沉重，实现身轻如燕</h1>
+                <p>通过科学的身体训练与生活方式调整，提升核心力量，改善身体协调性，让每一次跳跃与移动都充满轻盈与活力。</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>80%</h3>
+                        <p>改善身体协调性</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>3倍</h3>
+                        <p>核心稳定性提升</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>活力回归</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-title">
+                    <h2>为什么你会感到身体沉重？</h2>
+                    <p>了解身体沉重的根源，是迈向轻盈的第一步。通常与核心力量不足、体态不良及代谢效率有关。</p>
+                </div>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M2 12l5-5m-5 5l5 5"/></svg>
+                        </div>
+                        <h3>核心力量薄弱</h3>
+                        <p>腹部和背部肌肉群无力，无法有效支撑脊柱，导致身体在运动时消耗更多能量，产生疲劳感。</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h3>体态不良</h3>
+                        <p>长期含胸驼背或骨盆前倾，改变身体力学结构，使得重心下移，走路和运动时感觉沉重拖沓。</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        </div>
+                        <h3>代谢效率低</h3>
+                        <p>缺乏规律运动导致肌肉量减少，基础代谢率下降，身体在静止和活动时都容易堆积多余负担。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Method Section -->
+        <section id="method" class="method">
+            <div class="container">
+                <div class="method-layout">
+                    <div class="method-content">
+                        <h2>如何练就身轻如燕？</h2>
+                        <p>想要实现真正的轻盈，需要从力量、柔韧性和平衡性三个维度入手。这套科学的训练方案旨在激活深层肌肉，释放身体束缚。</p>
+                        
+                        <div class="method-list">
+                            <div class="method-item">
+                                <div class="method-num">1</div>
+                                <div class="method-text">
+                                    <h4>动态平衡训练</h4>
+                                    <p>通过单腿站立、平衡球训练等动作，强化本体感觉，提升神经控制能力，让身体反应更敏捷。</p>
+                                </div>
+                            </div>
+                            <div class="method-item">
+                                <div class="method-num">2</div>
+                                <div class="method-text">
+                                    <h4>深层核心激活</h4>
+                                    <p>专注于腹横肌的激活，而非仅仅练出腹肌。强大的核心能像天然束腰一样支撑身体，减少不必要的肌肉耗能。</p>
+                                </div>
+                            </div>
+                            <div class="method-item">
+                                <div class="method-num">3</div>
+                                <div class="method-text">
+                                    <h4>全身关节灵活性</h4>
+                                    <p>针对髋、膝、踝关节进行拉伸和活动度训练，消除关节僵硬，让肢体活动范围最大化，动作更舒展。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="method-image">
+                        <img src="https://picsum.photos/seed/yoga/600/400" alt="瑜伽普拉提训练场景" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diet Section -->
+        <section id="diet" class="diet">
+            <div class="container">
+                <div class="section-title">
+                    <h2>轻盈饮食搭配</h2>
+                    <p>三分练，七分吃。合理的营养摄入能辅助身体减轻负担，提供持续的能量。</p>
+                </div>
+                <div class="diet-grid">
+                    <article class="diet-card">
+                        <img src="https://picsum.photos/seed/salad/400/300" alt="高纤维蔬菜沙拉" class="diet-img" loading="lazy">
+                        <div class="diet-info">
+                            <span class="tag">高纤维</span>
+                            <h3>增加膳食纤维</h3>
+                            <p>多吃绿叶蔬菜、粗粮和豆类，促进肠道蠕动，减少体内湿气与滞留废物，减轻身体沉重感。</p>
+                        </div>
+                    </article>
+                    <article class="diet-card">
+                        <img src="https://picsum.photos/seed/salmon/400/300" alt="优质蛋白餐" class="diet-img" loading="lazy">
+                        <div class="diet-info">
+                            <span class="tag">优质蛋白</span>
+                            <h3>摄入优质蛋白</h3>
+                            <p>鱼肉、鸡胸肉和豆制品富含蛋白质，有助于维持肌肉量，提高代谢率，让身体代谢更高效。</p>
+                        </div>
+                    </article>
+                    <article class="diet-card">
+                        <img src="https://picsum.photos/seed/water/400/300" alt="充足水分摄入" class="diet-img" loading="lazy">
+                        <div class="diet-info">
+                            <span class="tag">水分补充</span>
+                            <h3>保持水分充足</h3>
+                            <p>每天保证充足饮水量，帮助身体排出代谢毒素，维持关节滑液分泌，减少身体摩擦阻力。</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <div class="section-title">
+                    <h2>常见问题解答</h2>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>年纪大了还能练出轻盈感吗？</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>当然可以。年龄增长带来的肌肉流失是导致身体沉重的主要原因之一。通过针对性的低冲击训练（如普拉提、太极）和饮食调整，即使在任何年龄段都能显著改善身体协调性和灵活性。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>需要每天练习多久才能见效？</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>建议每周进行3-4次，每次20-30分钟的科学训练。坚持4-6周，你通常会感觉到核心力量的增强和体态的改善。真正的轻盈感是一个持续的过程，需要长期坚持。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>除了运动，还有哪些生活习惯有助于身轻如燕？</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>保持良好的睡眠质量至关重要，睡眠是身体修复和肌肉生长的关键时期。此外，减少久坐时间，每小时起身活动，以及保持正确的坐姿和站姿，都能有效避免身体僵硬。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>关于身子轻如燕</h4>
+                    <p style="color: #bdc3c7; font-size: 0.9rem; line-height: 1.6;">
+                        我们致力于提供科学、实用的身体管理方案，帮助更多人摆脱沉重感，享受健康、活力、轻盈的生活状态。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#features">核心训练</a></li>
+                        <li><a href="#method">科学方法</a></li>
+                        <li><a href="#diet">饮食指南</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li><a href="#">咨询顾问</a></li>
+                        <li><a href="#">加入社区</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 身子轻如燕健康管理中心. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ Accordion Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
