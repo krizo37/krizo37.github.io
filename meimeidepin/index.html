@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="妹妹的拼音查询、发音指南及汉字详解。提供标准普通话发音、声调标注及同音字、近义词辨析，帮助用户准确掌握‘妹妹’一词的拼读与用法。">
+    <meta name="keywords" content="妹妹的拼音,妹妹读音,妹妹拼音怎么读,妹妹同音字,妹妹的意思">
+    <title>妹妹的拼音 - 汉字拼音查询与发音指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #e67e22;
+            --primary-hover: #d35400;
+            --bg-color: #fdfbf7;
+            --card-bg: #ffffff;
+            --text-main: #2c3e50;
+            --text-secondary: #7f8c8d;
+            --border-color: #ecf0f1;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            --radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: var(--card-bg);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 0;
+            background: linear-gradient(135deg, #fff8f0 0%, #ffffff 100%);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            color: var(--text-main);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .phonetic-display {
+            margin-top: 30px;
+            display: inline-block;
+            background: #fff;
+            padding: 20px 40px;
+            border-radius: 50px;
+            box-shadow: 0 8px 20px rgba(230, 126, 34, 0.15);
+            border: 2px solid var(--primary-color);
+        }
+
+        .pinyin-text {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            letter-spacing: 2px;
+        }
+
+        .tone-mark {
+            font-size: 1.2rem;
+            vertical-align: super;
+            color: var(--text-secondary);
+            margin-left: 4px;
+        }
+
+        /* Main Content */
+        main {
+            padding: 40px 0;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 24px;
+            padding-left: 12px;
+            border-left: 5px solid var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+
+        /* Grid Layout */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 24px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            font-size: 1.25rem;
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Detailed Breakdown */
+        .breakdown-box {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 32px;
+            box-shadow: var(--shadow);
+            margin-bottom: 40px;
+        }
+
+        .char-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .char-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .char-char {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--text-main);
+            width: 80px;
+            text-align: center;
+        }
+
+        .char-info {
+            flex: 1;
+            margin-left: 24px;
+        }
+
+        .char-pinyin {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .char-meaning {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        /* Audio Button */
+        .audio-btn {
+            background: #ffe0b2;
+            color: var(--primary-color);
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: background 0.2s;
+        }
+
+        .audio-btn:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* Related Words */
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .tag {
+            background: #f1f3f5;
+            color: var(--text-main);
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .tag:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            margin-bottom: 16px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            background: #fff;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: var(--text-secondary);
+            display: none;
+            border-top: 1px solid #f8f9fa;
+            padding-top: 15px;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-icon {
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 40px 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        footer p {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+                font-size: 0.9rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .pinyin-text {
+                font-size: 2.2rem;
+            }
+
+            .char-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .char-info {
+                margin-left: 0;
+                margin-top: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                <span>拼音查询网</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">常用词</a></li>
+                    <li><a href="#">成语</a></li>
+                    <li><a href="#">帮助</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>妹妹的拼音</h1>
+            <p>为您提供最标准、最清晰的汉字拼音查询服务，包含声调标注、发音技巧及同音字参考。</p>
+            
+            <div class="phonetic-display">
+                <div class="pinyin-text">mèi mèi</div>
+                <div class="tone-mark">mèi mèi</div>
+            </div>
+            
+            <div style="margin-top: 20px;">
+                <button class="audio-btn" onclick="playAudio('mèi mèi')">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                    听发音
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <!-- Detailed Breakdown -->
+        <section>
+            <h2 class="section-title">逐字拆解与详解</h2>
+            <div class="breakdown-box">
+                
+                <div class="char-item">
+                    <div class="char-char">妹</div>
+                    <div class="char-info">
+                        <div class="char-pinyin">mèi</div>
+                        <div class="char-meaning">姊妹中比自己年纪小的女性。</div>
+                        <div style="margin-top: 8px;">
+                            <button class="audio-btn" style="font-size: 0.8rem; padding: 4px 12px;" onclick="playAudio('mèi')">读 mèi</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="char-item">
+                    <div class="char-char">妹</div>
+                    <div class="char-info">
+                        <div class="char-pinyin">mèi</div>
+                        <div class="char-meaning">同“未”，用于“妹音”（古汉语助词，无实义）。</div>
+                        <div style="margin-top: 8px;">
+                            <button class="audio-btn" style="font-size: 0.8rem; padding: 4px 12px;" onclick="playAudio('mèi')">读 mèi</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Key Features -->
+        <section>
+            <h2 class="section-title">发音要点与技巧</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>声调：第四声</h3>
+                    <p>“mèi”是去声。发音时声带从高到低急剧下降，声音短促有力。注意不要读成第一声（mēi）或第二声（méi）。</p>
+                </div>
+                <div class="card">
+                    <h3>声母：m</h3>
+                    <p>双唇音。发音时双唇紧闭，气流从鼻腔流出。注意不要漏气，保持双唇闭拢。</p>
+                </div>
+                <div class="card">
+                    <h3>韵母：ei</h3>
+                    <p>前响复元音。发音时由半开到闭。注意“ei”的发音要饱满，不要读成“ui”或“ei”长短不一。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Words -->
+        <section>
+            <h2 class="section-title">同音字参考</h2>
+            <p style="margin-bottom: 16px; color: var(--text-secondary);">发音相同（mèi）的常用字：</p>
+            <div class="tag-cloud">
+                <a href="#" class="tag">妹</a>
+                <a href="#" class="tag">寐</a>
+                <a href="#" class="tag">味</a>
+                <a href="#" class="tag">味</a>
+                <a href="#" class="tag">妹</a>
+                <a href="#" class="tag">魅</a>
+                <a href="#" class="tag">妹</a>
+                <a href="#" class="tag">妹</a>
+                <a href="#" class="tag">妹</a>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section>
+            <h2 class="section-title">常见问题 (FAQ)</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    妹妹的拼音怎么写？
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    “妹妹”的拼音写作：mèi mèi。其中“妹”字的拼音是 mèi，声调是第四声（去声）。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    “妹”字是第几声？
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    “妹”字是汉语拼音中的第四声，发音时声调由高向低降，也就是我们常说的去声。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    妹妹的近义词有哪些？
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    “妹妹”的近义词包括：姐妹、小妹、阿妹等。在口语中有时也称为“小妹”。
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 拼音查询网 - 专注汉字拼音标准查询</p>
+            <p style="margin-top: 8px; font-size: 0.8rem;">本站提供的拼音仅供学习参考，请以标准普通话发音为准。</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ Toggle Logic
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+
+        // Placeholder for Audio Playback
+        function playAudio(text) {
+            // In a real scenario, this would use the Web Speech API or an audio file
+            // Using Web Speech API for demonstration
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'zh-CN';
+                utterance.rate = 0.9; // Slightly slower for clarity
+                window.speechSynthesis.speak(utterance);
+            } else {
+                alert('您的浏览器不支持语音播放功能，但“妹妹”的拼音是 mèi mèi。');
+            }
+        }
+    </script>
+</body>
+</html>
